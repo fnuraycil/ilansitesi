@@ -1,28 +1,46 @@
+import java.util.Scanner;
+
 class Vasita {
+    public static void vasita()
+    {
 
-    private String baslik;
-    private String aciklama;
-    private String sehir;
-    private String ilce;
-    private String vitesTipi;
-    private String renk;
-    private boolean kazali;
-    private boolean sahibinden;
+        String baslik;
+        String aciklama;
+        String vitesTipi;
+        String renk;
+        String kazalimi;
+        String sehir;
+        String ilce;
+        boolean sahibinden;
 
-    public void Vasita(String baslik, String aciklama, String sehir){
+        Scanner input = new Scanner(System.in);
 
-        this.baslik = baslik;
-        this.aciklama= aciklama;
-        this.sehir = sehir;
+        System.out.print("İlan başlığını giriniz :");
+        baslik = input.nextLine();
+        System.out.print("İlan açıklaması giriniz :");
+        aciklama = input.nextLine();
+        System.out.print("Şehir giriniz :");
+        sehir = input.nextLine();
+        System.out.print("İlçe giriniz :");
+        ilce = input.nextLine();
+        System.out.print("Vites bilgisi  giriniz :");
+        vitesTipi = input.nextLine();
+        System.out.print("Renk giriniz :");
+        renk = input.nextLine();
+        System.out.print("Hasar bilgisi giriniz :");
+        kazalimi = input.nextLine();
+        System.out.print("Sahibinden mi?  (True/False) :");
+        sahibinden = input.nextBoolean();
+
+
+        System.out.printf("İlan başlığı: " + baslik + "\n" +
+                "İlan açıklaması: " +aciklama + "\n" +
+                "Renk: " + renk + "\n" +
+                "Vites tipi: " + vitesTipi + "\n"+
+                "Kazalı mı?: " + kazalimi + "\n" +
+                "İl: " +sehir +"\n" +
+                "İlçe: " + ilce + "\n"+
+                "Sahibinden mi?: "+sahibinden + "\n");
 
     }
-
-
-
-
-
-
-
-
-
 }
